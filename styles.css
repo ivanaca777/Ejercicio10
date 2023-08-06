@@ -24,7 +24,50 @@ body form .label input {
 }
 body form div label input {
   margin: 10px;
-  color: red;
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+  body {
+    line-height: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  body form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  body form .label {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  body form .label input {
+    width: 50%;
+    height: 24px;
+    border: none;
+    border-bottom: 1px solid;
+  }
+  body form div {
+    display: flex;
+    position: absolute;
+    top: 118px;
+    left: 130px;
+    justify-content: center;
+    width: 70%;
+  }
+  body form div label input {
+    margin: 10px;
+  }
+  body form .label:last-of-type {
+    display: flex;
+    flex-direction: column;
+  }
+  body form .label:last-of-type input {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

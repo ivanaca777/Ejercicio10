@@ -17,7 +17,7 @@ body {
             display: flex;
             flex-direction: column;
             margin-top: 20px;
-            input {
+            & input {
                 width: 300px;
                 height: 24px;
                 border:none;
@@ -28,9 +28,59 @@ body {
             & label {
                 & input {
                     margin: 10px;
-                    color: red;
                 }
             }
         }
     }
+}
+
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+
+    body {
+        line-height: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+        & form {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+             & .label {
+                 display: flex;
+                 flex-direction: row;
+                 margin-top: 20px;
+                 width: 100%;
+                 justify-content: space-between;
+                & input {
+                     width: 50%;
+                     height: 24px;
+                     border:none;
+                     border-bottom: 1px solid;
+                 }           
+             }
+
+             & div {
+                display: flex;
+                position: absolute;
+                top: 118px;
+                left: 130px;
+                justify-content: center;
+                width: 70%;
+
+                 & label {
+                     & input {
+                         margin: 10px;
+                     }
+                 }            
+             }
+
+            .label:last-of-type {
+                display: flex;
+                flex-direction: column;
+                & input {
+                    width: 100%;
+                }
+            }
+         }
+     }
 }
