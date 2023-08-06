@@ -6,19 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Iván Castro - Guillermo Vicente">
     <meta name="copyright" content="Ref. to author | Todos los derechos reservados">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <link rel="stylesheet" href="" type="text/css">
-    <title></title>
+    <meta name="description" content="formulario de registro">
+    <meta name="keywords" content="formulario">
+    <link rel="stylesheet" href="./styles.css" type="text/css">
+    <title>formulario</title>
 </head>
 <body>
     <form>
-        <label for="nombre"><input name="nombre" type="text" placeholder="Primer nombre"></label>
-        <label for=""><input name="apellido" type="text" placeholder="Primer apellido"></label>
-        <label for=""><input name="tipoDni" type="radio" placeholder="DNI"></label>
-        <label for=""><input name="tipoDni" type="radio" placeholder="CUIL"></label>
-        <label for=""><input name="dni" type="text" placeholder="Número de documento"></label>
-        <label for=""><input name="direccion" type="text" placeholder="Dirección"></label>
+        <label class="label" for="nombre">Primer nombre<input name="nombre" type="text"></label>
+        <label class="label" for="apellido">Primer apellido<input name="apellido" type="text"></label>
+        <label class="label" for="tipo de documento">Tipo de documento</label>
+        <div>
+            <label for=""><input name="tipoDoc" type="radio" value="DNI">DNI</label>
+            <label for=""><input name="tipoDoc" type="radio" value="CUIL">CUIL</label>
+        </div>         
+        <label class="label" for="numeroDoc">Número de documento<input name="dni" type="text"></label>
+        <label class="label" for="direccion">Dirección<input name="direccion" type="text"></label>
     </form>
 </body>
 </html>

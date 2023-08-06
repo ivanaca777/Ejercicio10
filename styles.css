@@ -1,0 +1,27 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  line-height: 30px;
+  margin-left: 20px;
+}
+body form {
+  display: flex;
+  flex-direction: column;
+}
+body form .label {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+body form .label input {
+  width: 300px;
+}
+body form div label input {
+  margin: 10px;
+  color: red;
+}
+
+/*# sourceMappingURL=styles.css.map */

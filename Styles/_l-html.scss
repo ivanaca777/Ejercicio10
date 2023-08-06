@@ -1,0 +1,33 @@
+@charset 'UTF-8';
+
+$fsize: 18px;
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+   line-height: 30px;
+   margin-left: 20px;
+    form {
+        display: flex;
+        flex-direction: column;
+        & .label {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            input {
+                width: 300px;
+            }
+        }
+        & div {
+            & label {
+                & input {
+                    margin: 10px;
+                    color: red;
+                }
+            }
+        }
+    }
+}
