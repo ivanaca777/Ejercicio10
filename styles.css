@@ -16,6 +16,14 @@ body form .label {
   flex-direction: column;
   margin-top: 20px;
 }
+body form div .error-message {
+  display: flex;
+  flex-direction:row;
+  margin: 0 0 0 40px;
+  color: rgb(217, 81, 131);
+  font-size: 14px;
+  font-weight: bold;
+}
 body form .label input {
   width: 300px;
   height: 24px;
@@ -24,6 +32,26 @@ body form .label input {
 }
 body form div label input {
   margin: 10px;
+}
+
+body form button {
+  width: 100px;
+  height: 30px;
+  margin-top: 20px;
+  background-color: rgb(45, 120, 18);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+body .error-message {
+  display: flex;
+  flex-direction:row;
+  margin: 10px 0px 0px 40px;
+  color: rgb(217, 81, 131);
+  font-size: 14px;
+  font-weight: bold;
 }
 
 @media screen and (min-width: 425px) and (max-width: 767px) {
@@ -100,6 +128,7 @@ body form div label input {
     left: 2%;
     justify-content: center;
   }
+
   body form div label input {
     margin: 10px;
   }

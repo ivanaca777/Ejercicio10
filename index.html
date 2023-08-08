@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html lang="es-AR">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Iván Castro - Guillermo Vicente">
-    <meta name="copyright" content="Ref. to author | Todos los derechos reservados">
-    <meta name="description" content="formulario de registro">
-    <meta name="keywords" content="formulario">
-    <link rel="stylesheet" href="./styles.css" type="text/css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Iván Castro - Guillermo Vicente" />
+    <meta name="copyright" content="Ref. to author | Todos los derechos reservados" />
+    <meta name="description" content="formulario de registro" />
+    <meta name="keywords" content="formulario" />
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
     <title>formulario</title>
 </head>
 <body>
     <form>
-        <label class="label" for="nombre">Primer nombre:<input name="nombre" type="text"></label>
-        <label class="label" for="apellido">Primer apellido:<input name="apellido" type="text"></label>
+        <label class="label" for="nombre">Primer nombre:<input name="nombre" type="text" id="nombre" /></label>
+
+        <label class="label" for="apellido">Primer apellido:<input name="apellido" id="apellido" type="text" /></label>
+
+
         <label class="label" for="tipo de documento">Tipo de documento:</label>
         <div>
-            <label for="dni"><input name="tipoDoc" type="radio" value="DNI">DNI</label>
-            <label for="cuil"><input name="tipoDoc" type="radio" value="CUIL">CUIL</label>
-        </div>         
-        <label class="label" for="numeroDoc">Número de documento:<input name="dni" type="text"></label>
-        <label class="label" for="direccion">Dirección:<input name="direccion" type="text"></label>
+            <label for="dni"><input name="tipoDoc" type="radio" id="dni" value="DNI" />DNI</label>
+            <label for="cuil"><input name="tipoDoc" type="radio" id="cuil" value="CUIL" />CUIL</label>
+        </div>
+        <label class="label" for="numeroDoc">Número de documento:<input name="numeroDoc" id="numeroDoc"
+                type="text" /></label>
+        <label class="label" for="direccion">Dirección:<input name="direccion" id="direccion" type="text" /></label>
+        <button>registrar</button>
     </form>
+    <div id="errors" class="error-message"></div>
+    <script src="./js/main.js"></script>
+    </script>
 </body>
 </html>
